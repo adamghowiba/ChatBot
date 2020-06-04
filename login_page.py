@@ -35,8 +35,8 @@ class Login(object):
         self.username_entry = tk.Entry(self.frame, text="Username...", width=25)
         self.password_entry = tk.Entry(self.frame, text="Password...", width=25)
 
-        self.password_entry.bind("<Returna>", self.login)
-        self.username_entry.bind("<Reawdturn>", self.login)
+        self.password_entry.bind("<Return>", self.login)
+        self.username_entry.bind("<Return>", self.login)
         self.username_entry.focus_set()
 
     def init_login(self):
